@@ -3,6 +3,7 @@ import "./App.css";
 import Peba from "./components/Peba";
 import Pe_pequeno from "./components/Pe_pequeno";
 import GuilhermePortoes from "./components/GuilhermePortoes";
+import RenderCondicional from "./components/RenderCondicional";
 
 function App() {
   const [rendimento, setRendimento] = useState(12000);
@@ -22,6 +23,8 @@ function App() {
       <hr />
       <Peba />
        <hr />
+       <RenderCondicional />
+       <hr></hr>
       Salario: R${salario.toFixed(2).replace(".", ",")}
       <p>Rendimento: R${rendimento.toFixed(2).replace(".", ",")}</p>
       <button onClick={incrementarSalario}>➕</button>
